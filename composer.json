@@ -26,6 +26,14 @@
     "extra": {
         "branch-alias": {
             "dev-master": "5.0-dev"
+        },
+        "royalcms": {
+            "providers": [
+                "Royalcms\\Component\\Sentry\\SentryServiceProvider"
+            ],
+            "aliases": {
+                "RC_Sentry": "Royalcms\\Component\\Sentry\\Facades\\Sentry"
+            }
         }
     },
     "minimum-stability": "dev"
