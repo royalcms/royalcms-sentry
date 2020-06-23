@@ -39,20 +39,6 @@ class SentryServiceProvider extends ServiceProvider
         });
 
         $this->bindEvents($royalcms);
-
-        if ($royalcms->runningInConsole()) {
-            $this->registerArtisanCommands();
-        }
-    }
-
-    /**
-     * Register the artisan commands.
-     */
-    protected function registerArtisanCommands()
-    {
-        $this->commands(array(
-            'Royalcms\Component\Sentry\SentryTestCommand',
-        ));
     }
 
     /**
